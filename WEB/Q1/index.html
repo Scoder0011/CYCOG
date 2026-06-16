@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Made By --sc0d3r  -->
+    <!-- Paint splats — scattered across the wall -->
+    <div class="splats">
+        <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <filter id="splat-blur">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/>
+                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" xChannelSelector="R" yChannelSelector="G"/>
+                </filter>
+            </defs>
+
+            <!-- Splat 1 -->
+            <g filter="url(#splat-blur)" opacity="0.92">
+                <ellipse cx="140" cy="160" rx="130" ry="100" fill="#437943"/>
+                <ellipse cx="190" cy="110" rx="60" ry="35" fill="#437943"/>
+                <ellipse cx="80"  cy="230" rx="40" ry="20" fill="#437943"/>
+                <ellipse cx="240" cy="200" rx="30" ry="15" fill="#437943"/>
+                <ellipse cx="60"  cy="130" rx="25" ry="12" fill="#437943"/>
+                <ellipse cx="210" cy="80"  rx="18" ry="9"  fill="#437943"/>
+                <ellipse cx="150" cy="290" rx="22" ry="10" fill="#30677B"/>
+            </g>
+
+            <!-- Splat 2 -->
+            <g filter="url(#splat-blur)" opacity="0.9">
+                <ellipse cx="1300" cy="120" rx="120" ry="90" fill="#63306C"/>
+                <ellipse cx="1360" cy="70"  rx="55" ry="30" fill="#63306C"/>
+                <ellipse cx="1230" cy="190" rx="45" ry="22" fill="#63306C"/>
+                <ellipse cx="1390" cy="180" rx="28" ry="14" fill="#307235"/>
+                <ellipse cx="1200" cy="90"  rx="22" ry="11" fill="#307235"/>
+                <ellipse cx="1350" cy="230" rx="18" ry="9"  fill="#307235"/>
+            </g>
+
+            <!-- Splat 3 -->
+            <g filter="url(#splat-blur)" opacity="0.88">
+                <ellipse cx="220" cy="720" rx="140" ry="110" fill="#5F3472"/>
+                <ellipse cx="310" cy="650" rx="65" ry="38" fill="#5F3472"/>
+                <ellipse cx="110" cy="800" rx="50" ry="25" fill="#5F3472"/>
+                <ellipse cx="350" cy="790" rx="32" ry="16" fill="#335F6E"/>
+                <ellipse cx="90"  cy="660" rx="26" ry="13" fill="#335F6E"/>
+                <ellipse cx="300" cy="830" rx="20" ry="10" fill="#335F6E"/>
+            </g>
+
+            <!-- Splat 4 -->
+            <g filter="url(#splat-blur)" opacity="0.91">
+                <ellipse cx="1280" cy="750" rx="125" ry="95" fill="#30745F"/>
+                <ellipse cx="1370" cy="690" rx="58" ry="33" fill="#30745F"/>
+                <ellipse cx="1190" cy="820" rx="42" ry="21" fill="#30745F"/>
+                <ellipse cx="1400" cy="820" rx="30" ry="15" fill="#346C77"/>
+                <ellipse cx="1180" cy="700" rx="24" ry="12" fill="#346C77"/>
+                <ellipse cx="1360" cy="840" rx="19" ry="9"  fill="#346C77"/>
+            </g>
+
+            <!-- Splat 5 -->
+            <g filter="url(#splat-blur)" opacity="0.89">
+                <ellipse cx="700" cy="80"  rx="115" ry="85" fill="#347935"/>
+                <ellipse cx="790" cy="30"  rx="52" ry="28" fill="#347935"/>
+                <ellipse cx="610" cy="150" rx="38" ry="19" fill="#347935"/>
+                <ellipse cx="820" cy="150" rx="28" ry="14" fill="#5F7768"/>
+                <ellipse cx="600" cy="40"  rx="22" ry="11" fill="#5F7768"/>
+                <ellipse cx="760" cy="175" rx="17" ry="9"  fill="#5F7768"/>
+            </g>
+
+            <!-- Splat 6 -->
+            <g filter="url(#splat-blur)" opacity="0.87">
+                <ellipse cx="420" cy="440" rx="100" ry="75" fill="#34745F"/>
+                <ellipse cx="500" cy="385" rx="48" ry="27" fill="#34745F"/>
+                <ellipse cx="340" cy="500" rx="36" ry="18" fill="#34745F"/>
+                <ellipse cx="530" cy="500" rx="26" ry="13" fill="#746833"/>
+                <ellipse cx="330" cy="390" rx="20" ry="10" fill="#746833"/>
+                <ellipse cx="480" cy="530" rx="16" ry="8"  fill="#746833"/>
+            </g>
+
+            <!-- Splat 7 -->
+            <g filter="url(#splat-blur)" opacity="0.9">
+                <ellipse cx="980" cy="490" rx="135" ry="105" fill="#795F73"/>
+                <ellipse cx="1080" cy="420" rx="62" ry="36" fill="#795F73"/>
+                <ellipse cx="880"  cy="570" rx="48" ry="24" fill="#795F73"/>
+                <ellipse cx="1110" cy="560" rx="34" ry="17" fill="#33336D"/>
+                <ellipse cx="870"  cy="420" rx="27" ry="14" fill="#33336D"/>
+                <ellipse cx="1050" cy="590" rx="21" ry="11" fill="#7D0000"/>
+                <ellipse cx="920"  cy="380" rx="17" ry="9"  fill="#7D0000"/>
+            </g>
+
+        </svg>
+    </div>
+
+    <div class="hero">
+        <h1 class="title">𝓟𝓪𝓵𝓮𝓽𝓽𝓮</h1>
+        <p class="hint">Look beyond what the eye can see</p>
+    </div>
+
+    <div class="footer">Level 1 &mdash; Web</div>
+
+    <script>
+        const title = document.querySelector('.title');
+
+        const colors = [
+            '#e63946',
+            '#ff9800',
+            '#ffeb3b',
+            '#4caf50',
+            '#2196f3',
+            '#9c27b0',
+            '#ff4081',
+        ];
+
+        let current = 0;
+        let next = 1;
+        let progress = 0;
+
+        function lerpHex(a, b, t) {
+            const ar = parseInt(a.slice(1,3),16), ag = parseInt(a.slice(3,5),16), ab = parseInt(a.slice(5,7),16);
+            const br = parseInt(b.slice(1,3),16), bg = parseInt(b.slice(3,5),16), bb = parseInt(b.slice(5,7),16);
+            const r  = Math.round(ar + (br - ar) * t);
+            const g  = Math.round(ag + (bg - ag) * t);
+            const bl = Math.round(ab + (bb - ab) * t);
+            return `rgb(${r},${g},${bl})`;
+        }
+
+        function animate() {
+            progress += 0.004;
+            if (progress >= 1) {
+                progress = 0;
+                current = next;
+                next = (next + 1) % colors.length;
+            }
+            const color = lerpHex(colors[current], colors[next], progress);
+            title.style.textShadow = `0 0 20px ${color}, 0 0 40px ${color}, 0 0 80px ${color}`;
+            requestAnimationFrame(animate);
+        }
+
+        requestAnimationFrame(animate);
+    </script>
+
+</body>
+</html>
